@@ -4,8 +4,11 @@
   "description": "Preparation for upcoming website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass ./public/sass/main.scss ./public/style/main.css -w"
   },
   "author": "Christopher",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
 }

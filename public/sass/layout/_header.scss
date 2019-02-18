@@ -1,0 +1,14 @@
+.header{
+
+    &--primary{
+        background-image: 
+        linear-gradient(135deg, rgba($color-gradient-light,.4) 0%, rgba($color-gradient-dark,.1) 100%), 
+        url('../image/cover.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+}

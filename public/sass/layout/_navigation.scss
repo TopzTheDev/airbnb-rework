@@ -1,0 +1,60 @@
+.navbar{    
+    color: $color-gradient-dark;
+    background-color: $color-white;
+    
+    &__main{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__brand{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        height: 4rem;
+        width: auto;
+        margin: 1rem 0;
+    }
+    &__title{
+        margin-left: 1rem;
+    }
+
+    &__logo{
+        height: 100%;
+        widows: 100%;
+    }
+
+    &__tray{
+        display: flex;
+        height: 2rem;
+        margin-left: auto;
+    }
+
+}
+
+.nav{
+    display: flex;
+    font-size: 1.8rem;
+    height: 5rem;
+    margin-left: auto;
+    align-items: center;
+
+    &>*{
+        &:not(:last-child){
+            margin-right: 2.5rem;
+        }
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid transparent;
+        transition: all 300ms ease-in;
+        &:hover{
+            border-bottom: 2px solid $color-gradient-light;
+        }
+    }
+
+}

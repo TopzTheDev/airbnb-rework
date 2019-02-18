@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/main.css" />
+    <title>Airbnb</title>
+  </head>
+  <body>
+    <header class="header header--primary">
+      <div class="navbar">
+        <div class="row">
+          <div class="navbar__main">
+            <a href="#" class="navbar__brand">
+              <img
+                src="/public/image/logo.png"
+                class="navbar__logo"
+                alt="Logo"
+              />
+              <h1 class="navbar__title">Airbnb</h1>
+            </a>
+
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="#" class="nav_link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav_link">Experience</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav_link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav_link">Sign up</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav_link">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card card--offer">
+          <h1 class="card__title mb-2">
+            Book now, Enjoy the great experience later.
+          </h1>
+
+          <form class="form form--offer">
+              <div class="form__group form--full">
+                <input type="text" class="inp inp--primary" placeholder="Hey where you want to travel?" id="inp-where">
+                <label class="inp__label" for="inp-where">Where</label>
+              </div>
+
+              <div class="form__holder">
+                  <div class="form__group form--half">
+                    <input type="date" class="inp inp--primary" placeholder="" id="inp-start">
+                    <label class="inp__label" for="inp-start">Check in</label>
+                  </div>
+                  <div class="form__group form--half">
+                    <input type="date" class="inp inp--primary" placeholder="" id="inp-end">
+                    <label class="inp__label" for="inp-end">Check out</label>
+                  </div>
+              </div>
+              
+              <div class="form__group form--full">
+                <input type="number" class="inp inp--primary" placeholder="How many the guest?" id="inp-where">
+                <label class="inp__label" for="inp-where">Where</label>
+              </div> 
+              
+              <button class="btn btn--primary mt-1">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section--recommended">
+        <div class="row">
+          <h1 class="card__title mb-2">Recommended for you</h1>
+
+          <div class="card__holder">
+            <a href="#" class="card--recommended">
+              <div class="card--recommended__caption-holder">
+                  <h1 class="card--recommended__city">
+                    Tokyo
+                  </h1>
+                  <h1 class="card--recommended__country">
+                    Japan
+                  </h1>
+              </div>
+
+              <div class="card--recommended__image-holder">
+                  <img src="/public/image/rec-1.jpg" alt="Tokyo, Japan" class="card--recommended__image">
+              </div>
+              
+              <div class="card--recommended__image-cover"></div>
+              
+            </a>
+
+            <a href="#" class="card--recommended">
+                <div class="card--recommended__caption-holder">
+                    <h1 class="card--recommended__city">
+                      Palawan
+                    </h1>
+                    <h1 class="card--recommended__country">
+                      Philippines
+                    </h1>
+                </div>
+  
+                <div class="card--recommended__image-holder">
+                    <img src="/public/image/rec-2.jpg" alt="Tokyo, Japan" class="card--recommended__image">
+                </div>
+                
+                <div class="card--recommended__image-cover"></div>
+                
+            </a>
+
+            <a href="#" class="card--recommended">
+                <div class="card--recommended__caption-holder">
+                    <h1 class="card--recommended__city">
+                      London
+                    </h1>
+                    <h1 class="card--recommended__country">
+                      United Kingdom
+                    </h1>
+                </div>
+  
+                <div class="card--recommended__image-holder">
+                    <img src="/public/image/rec-3.jpg" alt="Tokyo, Japan" class="card--recommended__image">
+                </div>
+                
+                <div class="card--recommended__image-cover"></div>
+                
+            </a>
+
+            <a href="#" class="card--recommended">
+                <div class="card--recommended__caption-holder">
+                    <h1 class="card--recommended__city">
+                      New York
+                    </h1>
+                    <h1 class="card--recommended__country">
+                      United States
+                    </h1>
+                </div>
+  
+                <div class="card--recommended__image-holder">
+                    <img src="/public/image/rec-4.jpg" alt="Tokyo, Japan" class="card--recommended__image">
+                </div>
+                
+                <div class="card--recommended__image-cover"></div>
+                
+            </a>
+
+            <a href="#" class="card--recommended">
+                <div class="card--recommended__caption-holder">
+                    <h1 class="card--recommended__city">
+                      Mal&egrave;
+                    </h1>
+                    <h1 class="card--recommended__country">
+                      Maldives
+                    </h1>
+                </div>
+  
+                <div class="card--recommended__image-holder">
+                    <img src="/public/image/rec-5.jpg" alt="Tokyo, Japan" class="card--recommended__image">
+                </div>
+                
+                <div class="card--recommended__image-cover"></div>
+                
+            </a>
+            
+            <div class="card__fading">
+            </div>
+            <button class="card__nav card__nav--right">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="card__nav card__nav--left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>

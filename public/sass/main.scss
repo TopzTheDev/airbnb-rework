@@ -1,18 +1,43 @@
+//Vendor
+@import "vendors/bootstrap-grid";
+
+//Abstract
+@import "abstracts/color";
+@import "abstracts/function";
+@import "abstracts/mixins";
+@import "abstracts/placeholder";
+@import "abstracts/variables";
+
+//Layout
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/sidebar";
+@import "layout/cards";
+@import "layout/section";
+
+//Themes ===Here====
+
+//Pages
+@import "pages/contact";
+@import "pages/home";
+
+
+
+//Base
+@import "base/animation";
 @import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+//Components
+@import "components/buttons";
+@import "components/carousel";
+@import "components/cover";
+@import "components/input";
 
-body{
-    padding: 10px;
-    margin: 10px;
-}
 
-.class{
-    &::after{
-        margin: 20px;
-    }
-}
+//Base
+@import "base/base";

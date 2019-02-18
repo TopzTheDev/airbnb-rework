@@ -1,0 +1,25 @@
+.inp{
+    color: $font-color;
+    font-size: inherit;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    &--primary{
+        font: inherit;
+        font-size: 1.6rem;
+        height: 4rem;
+        border-radius: 100px;
+        border: none;
+        border: 2px solid $color-gradient-light;
+    }
+
+    &__label{
+        font-weight: 300;
+        font-size: 1.6rem;
+    }
+
+    &::-webkit-input-placeholder{
+        font-size: 1.4rem;
+    }
+}

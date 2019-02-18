@@ -1,0 +1,161 @@
+.card{
+    color: $color-gradient-light;
+    
+    //This class use for multiple card allignment [recommended]
+    &__holder{
+        display: flex;
+        width: 2000px;
+        position: relative;
+    }
+
+    &__fading{
+        height: 100%;
+        width: 50rem;
+        background-image: linear-gradient(to left, rgba(#fff,0.9) 80%, transparent);
+        position: absolute;
+        top: 0;
+        left: 110rem;
+        z-index: 5;
+    }
+
+    &__nav{
+        position: absolute;
+        z-index: 10;
+        cursor: pointer;
+        transform: translateY(-50%);
+        background-color: #fff;
+        height: 8rem;
+        width: 8rem;
+        border: none;
+        border-radius: 100%;
+        box-shadow: 0 0 30px rgba(0,0,0,0.4);
+        font-size: 3.3rem;
+        color: #484848;
+
+        &--right{
+            top: 50%;
+            left: 114rem;
+        }
+
+        &--left{
+            top: 50%;
+            left: -5rem;
+        }
+    }
+
+    &--offer{   
+        position: absolute; 
+        display: block;
+        width: 45rem;
+        margin-top: 5.5rem;
+        max-width: 45rem;
+        min-width: 45rem;
+        padding: 2rem 3rem 4rem 3rem;
+        box-shadow: 0 5px 14px $shadow-light;
+        border-radius: 5px;
+        background-color: $color-white;
+    }
+
+    &--recommended{
+        position: relative;
+        height: 400px;
+        min-height: 35rem;
+        width: 25rem;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+        transition: all 300ms ease-in;
+
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+
+        &__caption-holder{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 2rem;
+            width: 100%;
+            z-index: 3;
+        }
+
+        &__image-holder{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+        }
+
+        &__image-cover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            background-image: linear-gradient(to top, rgba(#484848,0.5) 10%, transparent);
+            height: 100%;
+            width: 100%;
+        }
+
+        &__image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all 300ms ease-in;
+        }
+
+        &__city{
+            font-weight: 400;
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: -1px;
+        }
+
+        &__country{
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 3.2rem;
+            color: #fff;
+            line-height: .9;
+            
+            overflow: hidden;
+            &::after{
+                display: block;
+                content: "";
+                height: 4px;
+                width: 40%;
+                background-color: #fff;
+                margin-top: 5px;
+                border-radius: 4px;
+                transition: all 300ms ease-in;
+                transform: translateX(-100%);
+            }
+        }
+
+        
+        &:hover &__image{
+            transform: scale(1.03);
+        }
+
+        &:hover &__country::after{
+            transform: translateX(0);
+        }   
+    }
+
+    &__title{
+        display: inline-block;
+        font-size: 3.1rem;
+        color: $color-gradient-light;
+        &::after{
+            display: block;
+            content: "";
+            height: 4px;
+            width: 40%;
+            background-color: $color-gradient-light;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+    }
+}

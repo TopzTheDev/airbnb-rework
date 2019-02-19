@@ -2,7 +2,7 @@
   "name": "airbnb-rework",
   "version": "1.0.0",
   "description": "Preparation for upcoming website",
-  "main": "home.html",
+  "main": "index.php",
   "scripts": {
     "compile:sass": "node-sass ./public/sass/main.scss ./public/style/main.css -w"
   },

@@ -4,17 +4,17 @@
     box-sizing: border-box;
 }
 
-html {
+html,body {
     font-size: 62.5%;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     -webkit-font-smoothing: subpixel-antialiased;
     font-smoothing: subpixel-antialiased;
+    overflow-x: hidden;
+    -ms-overflow-style: scrollbar;
+    scroll-behavior: smooth;
 }
 
-body{
-    overflow-x: hidden;
-}
 
 a{
     text-decoration: none;

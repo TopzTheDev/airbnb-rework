@@ -2,13 +2,21 @@
 
     &--primary{
         background-image: 
-        linear-gradient(135deg, rgba($color-gradient-light,.4) 0%, rgba($color-gradient-dark,.1) 100%), 
+        linear-gradient(135deg, rgba($color-gradient-light,.2) 0%, rgba($color-gradient-dark,.1) 100%), 
         url('../image/cover.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
         background-attachment: fixed;
-        height: 100vh;
+        height: 85vh;
         width: 100vw;
         position: relative;
+    }
+
+    &__title{
+        color: #fff;
+        width: 50%;
+        margin-top: 30rem;
+        transform: translateY(-50%);
     }
 }

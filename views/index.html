@@ -47,11 +47,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="card card--offer">
+        <div class="header__title">
+          <h1 class="heading--tertiary">The Calmeness of the iceland river</h1>
+          <p class="paragraph--primary">Over 1,902 experiences happened and over 300 houses here in iceland.</p>
+        </div>
+        
+        <!-- <div class="card card--offer">
           <h1 class="card__title mb-2">
             Book now, Enjoy the great experience later.
           </h1>
-
           <form class="form form--offer">
               <div class="form__group form--full">
                 <input type="text" class="inp inp--primary" placeholder="Hey where you want to travel?" id="inp-where">
@@ -76,16 +80,38 @@
               
               <button class="btn btn--primary mt-1">Search</button>
           </form>
-        </div>
+        </div>  -->
       </div>
     </header>
 
     <main>
+      <section class="section--book">
+          <div class="row">
+            <form action="#" class="form--flat">
+              
+                  <div class="form__group form--full form--horizontal">
+                      <input type="text" class="inp inp--flat" autocomplete="off" placeholder="Hey where you want to travel?" id="inp-where">
+                      <label class="inp__label--flat"  for="inp-where">Where?</label>
+                  </div>
+                  <div class="form__group form--half form--horizontal">
+                      <input type="date" class="inp inp--flat" autocomplete="off" placeholder="" id="inp-start">
+                      <label class="inp__label--flat" for="inp-where">Start</label>
+                  </div>
+                  <div class="form__group form--half form--horizontal">
+                      <input type="date" class="inp inp--flat" autocomplete="off" placeholder="" id="inp-start">
+                      <label class="inp__label--flat" for="inp-where">End</label>
+                  </div>
+                  <button class="btn btn--flat"><i class="fas fa-search"></i></button>
+                  
+            </form>
+          </div>
+          
+      </section>
+
       <section class="section--recommended">
         <div class="row">
-          <h1 class="card__title mb-2">Recommended for you</h1>
-
-          <div class="card__holder">
+          <h1 class="heading--primary mb-2">Recommended for you</h1>
+          <div class="card__carousel">
             <a href="#" class="card--recommended">
               <div class="card--recommended__caption-holder">
                   <h1 class="card--recommended__city">
@@ -103,7 +129,6 @@
               <div class="card--recommended__image-cover"></div>
               
             </a>
-
             <a href="#" class="card--recommended">
                 <div class="card--recommended__caption-holder">
                     <h1 class="card--recommended__city">
@@ -121,7 +146,6 @@
                 <div class="card--recommended__image-cover"></div>
                 
             </a>
-
             <a href="#" class="card--recommended">
                 <div class="card--recommended__caption-holder">
                     <h1 class="card--recommended__city">
@@ -139,7 +163,6 @@
                 <div class="card--recommended__image-cover"></div>
                 
             </a>
-
             <a href="#" class="card--recommended">
                 <div class="card--recommended__caption-holder">
                     <h1 class="card--recommended__city">
@@ -157,7 +180,6 @@
                 <div class="card--recommended__image-cover"></div>
                 
             </a>
-
             <a href="#" class="card--recommended">
                 <div class="card--recommended__caption-holder">
                     <h1 class="card--recommended__city">
@@ -175,7 +197,6 @@
                 <div class="card--recommended__image-cover"></div>
                 
             </a>
-            
             <div class="card__fading">
             </div>
             <button class="card__nav card__nav--right">
@@ -188,7 +209,255 @@
 
         </div>
       </section>
-    </main>
 
+      <section class="section--rated">
+        <div class="row">
+            <h1 class="heading--primary">Top-rated experience</h1><br>
+            <p class="paragraph--primary mt-1 mb-2">Book activities led by local hosts on your next trip.</p>
+        </div>
+
+        <div class="row">
+            <div class="flex">
+                <div class="flex--col-4">
+                    <a href="#" class="card--rated">
+                        <img src="/public/image/top-1.jpg" alt="" class="card--rated__image">
+                        <div class="card--rated__body">
+                            <h1 class="card__category">
+                                Mountain Hiking &bullet; Beach
+                            </h1>
+
+                            <h1 class="card__title">
+                                Wales Hiking
+                            </h1>
+
+                            <div class="card__rating">
+                                  4.97 &bullet; &nbsp; 
+
+                              <div class="card__star">
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i> 
+                              </div>
+
+                              &nbsp; (192)
+                            </div>
+                        </div>
+                      </a>
+                </div>
+                
+                <div class="flex--col-4">
+                    <a href="#" class="card--rated">
+                        <img src="/public/image/top-2.jpg" alt="" class="card--rated__image">
+                        <div class="card--rated__body">
+                            <h1 class="card__category">
+                                River Kayak &bullet; Forest Hiking
+                            </h1>
+
+                            <h1 class="card__title">
+                                Amazon River Kayak
+                            </h1>
+
+                            <div class="card__rating">
+                                  4.5 &bullet; &nbsp; 
+
+                              <div class="card__star">
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i> 
+                              </div>
+
+                              &nbsp; (112)
+                            </div>
+                        </div>
+                      </a>
+                </div>
+
+                <div class="flex--col-4">
+                    <a href="#" class="card--rated">
+                        <img src="/public/image/top-3.jpg" alt="" class="card--rated__image">
+                        <div class="card--rated__body">
+                            <h1 class="card__category">
+                                Mountain Hiking &bullet; Forest Hiking
+                            </h1>
+
+                            <h1 class="card__title">
+                                Sierra Madre Mountain Range Hiking
+                            </h1>
+
+                            <div class="card__rating">
+                                  4.4 &bullet; &nbsp; 
+
+                              <div class="card__star">
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i> 
+                              </div>
+
+                              &nbsp; (933)
+                            </div>
+                        </div>
+                      </a>
+                </div>
+
+                <div class="flex--col-4">
+                    <a href="#" class="card--rated">
+                        <img src="/public/image/top-4.jpg" alt="" class="card--rated__image">
+                        <div class="card--rated__body">
+                            <h1 class="card__category">
+                                Forest Hiking
+                            </h1>
+
+                            <h1 class="card__title">
+                                Lost Jungle Malaysia
+                            </h1>
+
+                            <div class="card__rating">
+                                  4.4 &bullet; &nbsp; 
+
+                              <div class="card__star">
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i> 
+                              </div>
+
+                              &nbsp; (933)
+                            </div>
+                        </div>
+                      </a>
+                </div>
+
+                <div class="flex--col-4">
+                    <a href="#" class="card--rated">
+                        <img src="/public/image/top-5.jpg" alt="" class="card--rated__image">
+                        <div class="card--rated__body">
+                            <h1 class="card__category">
+                                Aurora Borealis &bullet; Ice Hiking 
+                            </h1>
+
+                            <h1 class="card__title">
+                                Greenland Adventure
+                            </h1>
+
+                            <div class="card__rating">
+                                  4.9 &bullet; &nbsp; 
+
+                              <div class="card__star">
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i> 
+                              </div>
+
+                              &nbsp; (933)
+                            </div>
+                        </div>
+                      </a>
+                </div>
+
+                <div class="flex--col-4">
+                    <a href="#" class="card--rated">
+                        <img src="/public/image/top-6.jpg" alt="" class="card--rated__image">
+                        <div class="card--rated__body">
+                            <h1 class="card__category">
+                                Air Adventure
+                            </h1>
+
+                            <h1 class="card__title">
+                                Pampanga Parachuting
+                            </h1>
+
+                            <div class="card__rating">
+                                  4.5 &bullet; &nbsp; 
+
+                              <div class="card__star">
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i> 
+                              </div>
+
+                              &nbsp; (1004)
+                            </div>
+                        </div>
+                      </a>
+                </div>
+
+                <div class="flex--col-4">
+                    <a href="#" class="card--rated">
+                        <img src="/public/image/top-7.jpg" alt="" class="card--rated__image">
+                        <div class="card--rated__body">
+                            <h1 class="card__category">
+                                Air Adventure &bullet; Hot Air Balloon
+                            </h1>
+
+                            <h1 class="card__title">
+                                Russian Exp.
+                            </h1>
+
+                            <div class="card__rating">
+                                  4.8 &bullet; &nbsp; 
+
+                              <div class="card__star">
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i> 
+                              </div>
+
+                              &nbsp; (300)
+                            </div>
+                        </div>
+                      </a>
+                </div>
+
+                <div class="flex--col-4">
+                    <a href="#" class="card--rated">
+                        <img src="/public/image/top-8.jpg" alt="" class="card--rated__image">
+                        <div class="card--rated__body">
+                            <h1 class="card__category">
+                                Night Mode &bullet; City Adventure
+                            </h1>
+
+                            <h1 class="card__title">
+                                Manila Night Club
+                            </h1>
+
+                            <div class="card__rating">
+                                  4.7 &bullet; &nbsp; 
+
+                              <div class="card__star">
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i> 
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i> 
+                              </div>
+
+                              &nbsp; (420)
+                            </div>
+                        </div>
+                      </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <a href="#" class="btn--more">Show me more experiences <span>&rightarrow;</span></a>
+        </div>
+
+      </section>
+    </main>
+      
   </body>
 </html>

@@ -1,10 +1,11 @@
 .navbar{    
     color: $color-gradient-dark;
-    background-color: $color-white;
-    
+    background-color: $color-white; //transparent; 
+    width: 100%;
     &__main{
         display: flex;
         align-items: flex-end;
+        color: #fff;
     }
 
     &__brand{
@@ -16,6 +17,7 @@
         margin: 1rem 0;
     }
     &__title{
+        font-size: 2rem;
         margin-left: 1rem;
     }
 

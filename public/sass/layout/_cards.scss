@@ -3,21 +3,10 @@
     
     //This class use for multiple card allignment [recommended]
     &__carousel{
-        position: relative;
-        display: flex;
-        width: 2000px;
-        height: auto;
+        
     }
 
-    &__fading{
-        height: 100%;
-        width: 50rem;
-        background-image: linear-gradient(to left, rgba(#fff,0.9) 80%, transparent);
-        position: absolute;
-        top: 0;
-        left: 110rem;
-        z-index: 5;
-    }
+    
 
     &__nav{
         position: absolute;
@@ -35,12 +24,12 @@
         outline: none;
         &--right{
             top: 50%;
-            left: 114rem;
+            right: 10px;
         }
 
         &--left{
             top: 50%;
-            left: -5rem;
+            left: 10px;
         }
     }
 
@@ -59,14 +48,13 @@
 
     &--recommended{
         position: relative;
-        height: 350px;
-        min-height: 350px;
+        height: 350px !important;
         width: 230px;
         border-radius: 20px;
         overflow: hidden;
         box-shadow: 0 8px 18px rgba(0,0,0,0.3);
         transition: all 300ms ease-in;
-
+        outline: none;
         &:not(:last-child){
             margin-right: 20px;
         }
@@ -105,6 +93,11 @@
             object-fit: cover;
             object-position: center;
             transition: all 300ms ease-in;
+        }
+
+        &__tag{
+            font-size: 1.6rem;
+            color: #fff;
         }
 
         &__city{
@@ -171,7 +164,7 @@
             left: 0;
             z-index: 1;
             height: 40%;
-            width: 100%;
+            width: 101%;
             padding: 1rem;
             color: $font-color;
             transition: all 200ms ease-in;

@@ -1,0 +1,4 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "airbnb-rework",
+    "liveSassCompile.settings.excludeList": [ "**/node_modules/**", ".vscode/**", "public/slick/**" ]
+}

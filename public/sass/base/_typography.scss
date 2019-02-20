@@ -20,6 +20,11 @@
         text-transform: capitalize;
         font-size: 6rem;
     }
+
+    &--footer{
+        font-size: 1.8rem;
+        color: $color-gradient-light;
+    }
 }
 
 .paragraph{

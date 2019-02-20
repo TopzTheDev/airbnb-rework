@@ -1,4 +1,6 @@
 .section{
+    font-size: 1.6rem;
+    
     &--book{
         display: flex;
         background-image: linear-gradient(to right, $color-gradient-light, $color-gradient-dark);
@@ -21,6 +23,10 @@
     &--rated{
         padding: 4rem;
         color: $font-color;
+    }
+
+    &--spotlight{
+        padding: 2rem;
     }
 
 }

@@ -77,27 +77,33 @@
         
         }
 
-        &--facebook:hover{
+        &--facebook:hover, 
+        &--facebook:active
+        {
             color: #fff;
             background-color: #3B5DA0;
         }
 
-        &--twitter:hover{
+        &--twitter:hover, 
+        &--twitter:active{
             color: #fff;
             background-color: #1DA1F2;
         }
 
-        &--instagram:hover{
+        &--instagram:hover, 
+        &--instagram:active{
             color: #fff;
             background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
         }
 
-        &--reddit:hover{
+        &--reddit:hover, 
+        &--reddit:active{
             color: #fff;
             background-color: #FF4500;
         }
 
-        &--google:hover{
+        &--google:hover, 
+        &--google:active{
             color: #fff;
             background-color: #CC4136;
         }

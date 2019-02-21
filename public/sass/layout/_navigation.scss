@@ -2,10 +2,17 @@
     color: $color-gradient-dark;
     background-color: $color-white; //transparent; 
     width: 100%;
+    
     &__main{
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         color: #fff;
+        flex-wrap: wrap;
+
+        @include respond(tab-land){
+             padding: 0 3rem 0 2rem;
+             z-index: 130;
+        }
     }
 
     &__brand{
@@ -15,6 +22,12 @@
         height: 4rem;
         width: auto;
         margin: 1rem 0;
+        flex-basis: 50%;
+
+        @include respond(tab-land){
+            position: relative;
+            z-index: 20;
+       }
     }
     &__title{
         font-size: 2rem;
@@ -26,26 +39,83 @@
         widows: 100%;
     }
 
-    &__tray{
-        display: flex;
-        height: 2rem;
-        margin-left: auto;
-    }
-
 }
 
 .nav{
     display: flex;
     font-size: 1.8rem;
     height: 5rem;
-    margin-left: auto;
     align-items: center;
-
-    &>*{
-        &:not(:last-child){
-            margin-right: 2.5rem;
-        }
+    justify-content: flex-end;
+    align-self: flex-end;
+    flex-basis: 50%;
+    transition: all 400ms ease;
+    @include respond(tab-land){
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 1;
+        background-color: rgba(#fff,1);
+        justify-content: flex-start;
+        flex-direction: column;
+        flex: 1 0 100%;
+        padding-top: 7rem;
+        transform: translateY(-100%);
+        visibility: hidden;
     }
+
+    &__btn{
+        height: 40px;
+        width: 40px;
+        margin-left: auto;
+        background-color: transparent;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        display: none;
+
+        @include respond(tab-land){
+            display: block;
+            z-index: 20;
+        }
+
+        span{
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $color-gradient-light;
+            transition: all 500ms ease;
+            &::after{
+                position: absolute;
+                content: "";
+                bottom: 10px;
+                z-index: 2;
+                height: 2px;
+                width: 100%;
+                display: block;
+                transition: inherit;
+                background-color: $color-gradient-light;
+            }
+    
+            &::before{
+                position: absolute;
+                z-index: 2;
+                top: 10px;
+                content: "";
+                height: 2px;
+                width: 100%;
+                display: block;
+                transition: inherit;
+                background-color: $color-gradient-light;
+            }
+        }
+        
+    }
+
+   
 
     &__item{
         display: flex;
@@ -54,8 +124,23 @@
         padding-bottom: 1rem;
         border-bottom: 2px solid transparent;
         transition: all 300ms ease-in;
+
+        @include respond(tab-land){
+            height: 4rem;
+            font-size: 2.5rem;
+        }
+
         &:hover{
             border-bottom: 2px solid $color-gradient-light;
+        }
+
+        &:not(:last-child){
+            margin-right: 2.5rem;
+
+            @include respond(tab-land){
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
         }
     }
 

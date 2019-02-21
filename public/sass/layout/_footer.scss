@@ -1,22 +1,41 @@
 .footer{
     
     width: 100%;
-    padding: 4rem 0 0 0;
+    padding: 3rem 0 3rem 0;
     color: #c9c9c9;
     background-color: #222222;
     
+    @include respond(tab-land){
+        padding: 3rem 2rem 3rem 2rem;
+        position: relative;
+    }
+
     &__container{
         display: flex;
         height: 100%;
         width: 100%;
+        flex-wrap: wrap;
     }
 
     &__division{
         flex-basis: 50%;
 
+
         &:not(:last-child){
             margin-right: 4rem;
+
+            @include respond(tab-port){
+                margin-bottom: 3rem ;
+            }
         }
+
+        @include respond(tab-port){
+            flex-basis: 100%;
+        }
+    }
+
+    &__list{
+        flex-basis: 50%;
     }
 
     &__social{
@@ -92,8 +111,8 @@
 
     }
     &__copyright{
+        color: #fff;
         padding: 1rem;
-        margin-top: 5rem;
         width: 100%;
         font-size: 1.6rem;
         background-image: linear-gradient(to right, $color-gradient-light, $color-gradient-dark);

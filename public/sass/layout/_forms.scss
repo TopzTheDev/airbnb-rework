@@ -1,5 +1,17 @@
 .form{
     
+    &__title{
+        display: none !important;
+        color: #fff !important;
+
+        &::after{
+            background-color: #fff !important;
+        }
+        @include respond(tab-port){
+            display: inline-block !important;
+            width: 80%;   
+        }
+    }
     
     &--offer{
         width: 100%;
@@ -10,6 +22,12 @@
         height: 9rem;
         width: 100%;
         align-items: center;
+        
+        @include respond(tab-port){
+            align-items: flex-start;
+            flex-direction: column;
+            height: 100%;
+        }
 
     }
 
@@ -29,6 +47,7 @@
             }
         }     
     }
+    
 
     &--full{
         width: 100%;
@@ -37,6 +56,10 @@
     &--half{
         display: flex;
         width: 50%;
+
+        @include respond(tab-port){
+            width: 100%;
+        }
     }
 
     

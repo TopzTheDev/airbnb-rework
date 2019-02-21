@@ -32,9 +32,16 @@
         color: #fff;
         font-size: 3rem;
         align-items: center;
+        justify-content: center;
         
         &>*{
             margin-right: 5px;
+        }
+
+        @include respond(tab-port){
+            width: 100%;
+            margin-top: 10px;
+            
         }
     }
 

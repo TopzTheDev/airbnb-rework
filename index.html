@@ -10,8 +10,8 @@
     />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="./public/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./public/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <title>Airbnb</title>
   </head>
   <body>
@@ -27,8 +27,10 @@
               />
               <h1 class="navbar__title">Airbnb</h1>
             </a>
-
-            <ul class="nav">
+            <button id="btn-nav" class="nav__btn">
+              <span></span>
+            </button>
+            <ul class="nav" id="nav">
               <li class="nav__item">
                 <a href="#" class="nav_link">Home</a>
               </li>
@@ -90,7 +92,7 @@
       <section class="section--book">
           <div class="row">
             <form action="#" class="form--flat">
-              
+                  <h1 class="heading--primary form__title mb-2">Book now, Enjoy the great experience later.</h1>
                   <div class="form__group form--full form--horizontal">
                       <input type="text" class="inp inp--flat" autocomplete="off" placeholder="Hey where you want to travel?" id="inp-where">
                       <label class="inp__label--flat"  for="inp-where">Where?</label>
@@ -111,21 +113,21 @@
       </section>
 
       <section class="section--offer">
-        <div class="row">
-          <a href="" class="box box--offer">
-            <img class="box__image" src="./public/image/off-1.jpg" alt="">
-          </a>
-          <a href="" class="box box--offer">
-              <img class="box__image" src="./public/image/off-2.jpg" alt="">
-          </a href="">
-          <a href="" class="box box--offer">
-              <img class="box__image" src="./public/image/off-3.jpg" alt="">
-          </a href="">
-        </div>
+        <div class="box__container">
+            <a href="#" class="box box--offer">
+              <img class="box__image" src="./public/image/off-1.jpg" alt="">
+            </a>
+            <a href="#" class="box box--offer">
+                <img class="box__image" src="./public/image/off-2.jpg" alt="">
+            </a>
+            <a href="#" class="box box--offer">
+                <img class="box__image" src="./public/image/off-3.jpg" alt="">
+            </a>
+          </div>
       </section>
-
+      <div class="row">
       <section class="section--recommended">
-        <div class="row">
+        
           <h1 class="heading--primary mb-2">Recommended for you</h1>
           <div class="carousel__hider">
             <div class="card__carousel">
@@ -231,269 +233,270 @@
             <div class="carousel__fading carousel__fading--right">
             </div>
           </div>
-          
-
-        </div>
       </section>
+      </div>
 
-      <section class="section section--rated">
-        <div class="row">
-            <h1 class="heading--primary">Top-rated experience</h1><br>
-            <p class="paragraph--primary mt-1 mb-2">Book activities led by local hosts on your next trip.</p>
-        </div>
-
-        <div class="row">
-            <div class="flex">
-                <div class="flex--col-4">
-                    <a href="#" class="card--rated">
-                        <img src="./public/image/top-1.jpg" alt="" class="card--rated__image">
-                        <div class="card--rated__body">
-                            <h1 class="card__category">
-                                Mountain Hiking &bullet; Beach
-                            </h1>
-
-                            <h1 class="card__title">
-                                Wales Hiking
-                            </h1>
-
-                            <div class="card__rating">
-                                  4.97 &bullet; &nbsp; 
-
-                              <div class="card__star">
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i> 
+      <div class="row">
+          <section class="section section--rated">
+              <div class="row">
+                  <h1 class="heading--primary">Top-rated experience</h1><br>
+                  <p class="paragraph--primary mt-1 mb-2">Book activities led by local hosts on your next trip.</p>
+              </div>
+      
+              <div class="row">
+                  <div class="flex">
+                      <div class="flex--col-4">
+                          <a href="#" class="card--rated">
+                              <img src="./public/image/top-1.jpg" alt="" class="card--rated__image">
+                              <div class="card--rated__body">
+                                  <h1 class="card__category">
+                                      Mountain Hiking &bullet; Beach
+                                  </h1>
+      
+                                  <h1 class="card__title">
+                                      Wales Hiking
+                                  </h1>
+      
+                                  <div class="card__rating">
+                                        4.97 &bullet; &nbsp; 
+      
+                                    <div class="card__star">
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i> 
+                                    </div>
+      
+                                    &nbsp; (192)
+                                  </div>
                               </div>
-
-                              &nbsp; (192)
-                            </div>
-                        </div>
-                      </a>
-                </div>
-                
-                <div class="flex--col-4">
-                    <a href="#" class="card--rated">
-                        <img src="./public/image/top-2.jpg" alt="" class="card--rated__image">
-                        <div class="card--rated__body">
-                            <h1 class="card__category">
-                                River Kayak &bullet; Forest Hiking
-                            </h1>
-
-                            <h1 class="card__title">
-                                Amazon River Kayak
-                            </h1>
-
-                            <div class="card__rating">
-                                  4.5 &bullet; &nbsp; 
-
-                              <div class="card__star">
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star-half-alt"></i> 
+                            </a>
+                      </div>
+                      
+                      <div class="flex--col-4">
+                          <a href="#" class="card--rated">
+                              <img src="./public/image/top-2.jpg" alt="" class="card--rated__image">
+                              <div class="card--rated__body">
+                                  <h1 class="card__category">
+                                      River Kayak &bullet; Forest Hiking
+                                  </h1>
+      
+                                  <h1 class="card__title">
+                                      Amazon River Kayak
+                                  </h1>
+      
+                                  <div class="card__rating">
+                                        4.5 &bullet; &nbsp; 
+      
+                                    <div class="card__star">
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i> 
+                                    </div>
+      
+                                    &nbsp; (112)
+                                  </div>
                               </div>
-
-                              &nbsp; (112)
-                            </div>
-                        </div>
-                        <div class="badge badge--feature">
-                          Feature
-                        </div>
-                      </a>
-                </div>
-
-                <div class="flex--col-4">
-                    <a href="#" class="card--rated">
-                        <img src="./public/image/top-3.jpg" alt="" class="card--rated__image">
-                        <div class="card--rated__body">
-                            <h1 class="card__category">
-                                Mountain Hiking &bullet; Forest Hiking
-                            </h1>
-
-                            <h1 class="card__title">
-                                Sierra Madre Mountain Range Hiking
-                            </h1>
-
-                            <div class="card__rating">
-                                  4.4 &bullet; &nbsp; 
-
-                              <div class="card__star">
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star-half-alt"></i> 
+                              <div class="badge badge--feature">
+                                Feature
                               </div>
-
-                              &nbsp; (933)
-                            </div>
-                        </div>
-                        <div class="badge badge--popular">
-                          Popular
-                        </div>
-
-                      </a>
-                </div>
-
-                <div class="flex--col-4">
-                    <a href="#" class="card--rated">
-                        <img src="./public/image/top-4.jpg" alt="" class="card--rated__image">
-                        <div class="card--rated__body">
-                            <h1 class="card__category">
-                                Forest Hiking
-                            </h1>
-
-                            <h1 class="card__title">
-                                Lost Jungle Malaysia
-                            </h1>
-
-                            <div class="card__rating">
-                                  4.4 &bullet; &nbsp; 
-
-                              <div class="card__star">
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star-half-alt"></i> 
+                            </a>
+                      </div>
+      
+                      <div class="flex--col-4">
+                          <a href="#" class="card--rated">
+                              <img src="./public/image/top-3.jpg" alt="" class="card--rated__image">
+                              <div class="card--rated__body">
+                                  <h1 class="card__category">
+                                      Mountain Hiking &bullet; Forest Hiking
+                                  </h1>
+      
+                                  <h1 class="card__title">
+                                      Sierra Madre Mountain Range Hiking
+                                  </h1>
+      
+                                  <div class="card__rating">
+                                        4.4 &bullet; &nbsp; 
+      
+                                    <div class="card__star">
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i> 
+                                    </div>
+      
+                                    &nbsp; (933)
+                                  </div>
                               </div>
-
-                              &nbsp; (933)
-                            </div>
-                        </div>
-                      </a>
-                </div>
-
-                <div class="flex--col-4">
-                    <a href="#" class="card--rated">
-                        <img src="./public/image/top-5.jpg" alt="" class="card--rated__image">
-                        <div class="card--rated__body">
-                            <h1 class="card__category">
-                                Aurora Borealis &bullet; Ice Hiking 
-                            </h1>
-
-                            <h1 class="card__title">
-                                Greenland Adventure
-                            </h1>
-
-                            <div class="card__rating">
-                                  4.9 &bullet; &nbsp; 
-
-                              <div class="card__star">
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i> 
+                              <div class="badge badge--popular">
+                                Popular
                               </div>
-
-                              &nbsp; (933)
-                            </div>
-                        </div>
-                      </a>
-                </div>
-
-                <div class="flex--col-4">
-                    <a href="#" class="card--rated">
-                        <img src="./public/image/top-6.jpg" alt="" class="card--rated__image">
-                        <div class="card--rated__body">
-                            <h1 class="card__category">
-                                Air Adventure
-                            </h1>
-
-                            <h1 class="card__title">
-                                Pampanga Parachuting
-                            </h1>
-
-                            <div class="card__rating">
-                                  4.5 &bullet; &nbsp; 
-
-                              <div class="card__star">
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i> 
+      
+                            </a>
+                      </div>
+      
+                      <div class="flex--col-4">
+                          <a href="#" class="card--rated">
+                              <img src="./public/image/top-4.jpg" alt="" class="card--rated__image">
+                              <div class="card--rated__body">
+                                  <h1 class="card__category">
+                                      Forest Hiking
+                                  </h1>
+      
+                                  <h1 class="card__title">
+                                      Lost Jungle Malaysia
+                                  </h1>
+      
+                                  <div class="card__rating">
+                                        4.4 &bullet; &nbsp; 
+      
+                                    <div class="card__star">
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i> 
+                                    </div>
+      
+                                    &nbsp; (933)
+                                  </div>
                               </div>
-
-                              &nbsp; (1004)
-                            </div>
-                        </div>
-                        <div class="badge badge--hot">
-                          Hot
-                        </div>
-                      </a>
-                </div>
-
-                <div class="flex--col-4">
-                    <a href="#" class="card--rated">
-                        <img src="./public/image/top-7.jpg" alt="" class="card--rated__image">
-                        <div class="card--rated__body">
-                            <h1 class="card__category">
-                                Air Adventure &bullet; Hot Air Balloon
-                            </h1>
-
-                            <h1 class="card__title">
-                                Russian Exp.
-                            </h1>
-
-                            <div class="card__rating">
-                                  4.8 &bullet; &nbsp; 
-
-                              <div class="card__star">
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i> 
+                            </a>
+                      </div>
+      
+                      <div class="flex--col-4">
+                          <a href="#" class="card--rated">
+                              <img src="./public/image/top-5.jpg" alt="" class="card--rated__image">
+                              <div class="card--rated__body">
+                                  <h1 class="card__category">
+                                      Aurora Borealis &bullet; Ice Hiking 
+                                  </h1>
+      
+                                  <h1 class="card__title">
+                                      Greenland Adventure
+                                  </h1>
+      
+                                  <div class="card__rating">
+                                        4.9 &bullet; &nbsp; 
+      
+                                    <div class="card__star">
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i> 
+                                    </div>
+      
+                                    &nbsp; (933)
+                                  </div>
                               </div>
-
-                              &nbsp; (300)
-                            </div>
-                        </div>
-                      </a>
-                </div>
-
-                <div class="flex--col-4">
-                    <a href="#" class="card--rated">
-                        <img src="./public/image/top-8.jpg" alt="" class="card--rated__image">
-                        <div class="card--rated__body">
-                            <h1 class="card__category">
-                                Night Mode &bullet; City Adventure
-                            </h1>
-
-                            <h1 class="card__title">
-                                Manila Night Club
-                            </h1>
-
-                            <div class="card__rating">
-                                  4.7 &bullet; &nbsp; 
-
-                              <div class="card__star">
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i> 
-                                  <i class="fas fa-star"></i>
-                                  <i class="fas fa-star"></i> 
+                            </a>
+                      </div>
+      
+                      <div class="flex--col-4">
+                          <a href="#" class="card--rated">
+                              <img src="./public/image/top-6.jpg" alt="" class="card--rated__image">
+                              <div class="card--rated__body">
+                                  <h1 class="card__category">
+                                      Air Adventure
+                                  </h1>
+      
+                                  <h1 class="card__title">
+                                      Pampanga Parachuting
+                                  </h1>
+      
+                                  <div class="card__rating">
+                                        4.5 &bullet; &nbsp; 
+      
+                                    <div class="card__star">
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i> 
+                                    </div>
+      
+                                    &nbsp; (1004)
+                                  </div>
                               </div>
-
-                              &nbsp; (420)
-                            </div>
-                        </div>
-                      </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-          <a href="#" class="btn--more">Show me more experiences <span>&rightarrow;</span></a>
-        </div>
-
-      </section>
-
+                              <div class="badge badge--hot">
+                                Hot
+                              </div>
+                            </a>
+                      </div>
+      
+                      <div class="flex--col-4">
+                          <a href="#" class="card--rated">
+                              <img src="./public/image/top-7.jpg" alt="" class="card--rated__image">
+                              <div class="card--rated__body">
+                                  <h1 class="card__category">
+                                      Air Adventure &bullet; Hot Air Balloon
+                                  </h1>
+      
+                                  <h1 class="card__title">
+                                      Russian Exp.
+                                  </h1>
+      
+                                  <div class="card__rating">
+                                        4.8 &bullet; &nbsp; 
+      
+                                    <div class="card__star">
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i> 
+                                    </div>
+      
+                                    &nbsp; (300)
+                                  </div>
+                              </div>
+                            </a>
+                      </div>
+      
+                      <div class="flex--col-4">
+                          <a href="#" class="card--rated">
+                              <img src="./public/image/top-8.jpg" alt="" class="card--rated__image">
+                              <div class="card--rated__body">
+                                  <h1 class="card__category">
+                                      Night Mode &bullet; City Adventure
+                                  </h1>
+      
+                                  <h1 class="card__title">
+                                      Manila Night Club
+                                  </h1>
+      
+                                  <div class="card__rating">
+                                        4.7 &bullet; &nbsp; 
+      
+                                    <div class="card__star">
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i> 
+                                    </div>
+      
+                                    &nbsp; (420)
+                                  </div>
+                              </div>
+                            </a>
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="row">
+                <a href="#" class="btn--more">Show me more experiences <span>&rightarrow;</span></a>
+              </div>
+      
+          </section>
+      </div>
+      
+      <div class="row">
       <section class="section section--spotlight">
           <div class="row">
               <h1 class="heading--primary mb-2">Experience in the spotlight</h1>
@@ -541,9 +544,13 @@
             
         </div>
         
+        <div class="row">
+            <a href="#" class="btn--more">Show me more experiences <span>&rightarrow;</span></a>
+          </div>
       </section>
+      </div>
     </main>
-   
+    
     <footer class="footer">
       <div class="row">
         <div class="footer__container">
@@ -569,7 +576,7 @@
     
             <div class="footer__division">
               <div class="footer__container">
-                  <div class="footer__division">
+                  <div class="footer__list">
                       <h1 class="heading--footer mb-1">Company</h1>
                       <ul class="footer__list">
                           <li class="footer__item"><a href="#" class="footer__link">Home</a></li>
@@ -583,7 +590,7 @@
                       </ul>
                   </div>
   
-                  <div class="footer__division">
+                  <div class="footer__list">
                       <h1 class="heading--footer mb-1">Community</h1>
                       <ul class="footer__list">
                           <li class="footer__item"><a href="#" class="footer__link">Become a host</a></li>
@@ -593,21 +600,28 @@
                       </ul>
                   </div>
               </div>
-             
+            
                 
             </div> 
 
 
         </div>
       </div>
-      <div class="footer__copyright">
-          <p class="paragraph--copyright">Designed from Manila,Philippines with 💖 by Christopher Lugod.</p> 
-      </div>
     </footer>
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./public/slick/slick.min.js"></script>
+    <div class="footer__copyright">
+        <p class="paragraph--copyright">Designed from Manila,Philippines with 💖 by Christopher Lugod.</p> 
+    </div>    
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    integrity="sha256-HmfY28yh9v2U4HfIXC+0D6HCdWyZI42qjaiCFEJgpo0="
+    crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+    integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     
     <script type="text/javascript">
       $(document).ready(function(){
@@ -622,8 +636,8 @@
           adaptiveHeight: true,
           pauseOnFocus: true,
           centerMode: true,
-          prevArrow:'<button class="card__nav card__nav--right"><i class="fas fa-chevron-right"></i></button>',
-          nextArrow:'<button class="card__nav card__nav--left"><i class="fas fa-chevron-left"></i></button>',
+          prevArrow:'<button class="card__nav card__nav--left"><i class="fas fa-chevron-left"></i></button>',
+          nextArrow:'<button class="card__nav card__nav--right"><i class="fas fa-chevron-right"></i></button>',
           responsive: [
             {
               breakpoint: 1024,
@@ -655,6 +669,15 @@
           ]
         });
       });
+      
+      
+      document.getElementById('btn-nav').addEventListener('click',(e)=>{
+          document.body.classList.toggle('body-lock');
+          document.getElementById('nav').classList.toggle('nav-show');
+          document.getElementById('btn-nav').classList.toggle('btn-animation');
+          console.log('clicked');
+      });
+    
     </script>
 
   </body>

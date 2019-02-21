@@ -5,7 +5,7 @@
   "main": "index.php",
   "scripts": {
     "compile:sass": "node-sass ./public/sass/main.scss ./public/style/main.css -w",
-    "deploy": "gh-pages"
+    "deploy": "gh-pages -d ."
   },
   "author": "Christopher",
   "license": "ISC",

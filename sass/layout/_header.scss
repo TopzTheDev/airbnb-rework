@@ -1,0 +1,43 @@
+.header{
+
+    &--primary{
+        background-image: 
+        linear-gradient(135deg, rgba($color-gradient-light,.2) 0%, rgba($color-gradient-dark,.1) 100%), 
+        url('../image/cover.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 86vh;
+        width: 100%;
+        position: relative;
+    }
+
+    &__title{
+        color: #fff;
+        width: 50%;
+        margin-top: 38rem;
+        transform: translateY(-50%);
+        font-size: 1.6rem;
+
+        @include respond(tab-land){
+            padding: 0 2rem;
+            width: 70%;
+            margin-top: 32rem;
+       }
+
+        @include respond(tab-port){
+            width: 80%;
+        }
+
+        @include respond(phone){
+            margin-top: 27rem;
+            h1{
+                font-size: 4rem;
+            }
+            p{
+                margin-left: 4px;
+            }
+        }
+    }
+}

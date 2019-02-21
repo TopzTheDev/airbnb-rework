@@ -1,0 +1,137 @@
+.footer{
+    
+    width: 100%;
+    padding: 3rem 0 3rem 0;
+    color: #c9c9c9;
+    background-color: #222222;
+    
+    @include respond(tab-land){
+        padding: 3rem 2rem 3rem 2rem;
+        position: relative;
+    }
+    
+    &__container{
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+        @include respond(tab-port){
+            flex-wrap: wrap;
+        }
+
+        @include respond(phone){
+               
+        }
+    
+        
+    }
+
+    &__division{
+        flex-basis: 50%;
+
+        
+
+        &:not(:last-child){
+            margin-right: 4rem;
+
+            @include respond(tab-port){
+                margin-right: 0;
+                margin-bottom: 3rem ;
+            }
+        }
+
+        @include respond(tab-port){
+            flex-basis: 100%;
+        }
+    }
+
+    &__list{
+        flex-basis: 50%;
+    }
+
+    &__social{
+        display: flex;
+        width: 100%;
+
+    }
+
+    &__social-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-gradient-light;
+        font-size: 2.5rem;
+        background-color: rgba(#fff,0.8);
+        height: 4rem;
+        width: 4rem;
+        border-radius: 100%;
+        transition: all 300ms ease;
+
+
+        &:not(:last-child){
+            margin-right: 2.5rem;
+
+            @include respond(phone){
+                margin-right: 2rem; 
+            }
+        
+        }
+
+        &--facebook:hover{
+            color: #fff;
+            background-color: #3B5DA0;
+        }
+
+        &--twitter:hover{
+            color: #fff;
+            background-color: #1DA1F2;
+        }
+
+        &--instagram:hover{
+            color: #fff;
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        }
+
+        &--reddit:hover{
+            color: #fff;
+            background-color: #FF4500;
+        }
+
+        &--google:hover{
+            color: #fff;
+            background-color: #CC4136;
+        }
+    }
+
+    &__email{
+
+    }
+
+    &__list{
+        
+    }
+
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__link{
+        &,
+        &:link,
+        &:visited{
+            font-size: 1.6rem;
+            color: #c9c9c9;
+        }
+
+    }
+    &__copyright{
+        color: #fff;
+        padding: 1rem;
+        width: 100%;
+        font-size: 1.6rem;
+        background-image: linear-gradient(to right, $color-gradient-light, $color-gradient-dark);
+        text-align: center;
+    }
+}

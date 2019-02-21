@@ -1,0 +1,26 @@
+.badge{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 5px 20px;
+    font-size: 1.6rem;
+    clip-path: polygon(0% 0%, 100% 0, 90% 50%, 100% 100%, 0% 100%);
+    box-shadow: 0 5px 20px rgba(#000,.2);
+    color: #fff;
+    &--new{
+        background-color: #5CB85C;
+    }
+
+    &--feature{
+        background-color: #F0AD4E;
+    }
+
+    &--hot{
+        background-color: #D9534F;
+    }
+
+    &--popular{
+        background-color: #FF4500;
+    }
+
+}

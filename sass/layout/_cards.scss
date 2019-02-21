@@ -1,0 +1,260 @@
+.card{
+    color: $color-gradient-light;
+    
+    &--offer{   
+        position: absolute; 
+        display: block;
+        width: 45rem;
+        margin-top: 5.5rem;
+        max-width: 45rem;
+        min-width: 45rem;
+        padding: 2rem 3rem 4rem 3rem;
+        box-shadow: 0 5px 14px $shadow-light;
+        border-radius: 5px;
+        background-color: $color-white;
+    }
+
+    &--recommended{
+        position: relative;
+        height: 350px !important;
+        width: 230px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+        transition: all 300ms ease-in;
+        outline: none;
+
+        @include respond(tab-port){
+            height: 300px !important;
+            width: 200px;
+        }
+
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+
+        &__caption-holder{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 2rem;
+            width: 100%;
+            z-index: 3;
+        }
+
+        &__image-holder{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+        }
+
+        &__image-cover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            background-image: linear-gradient(to top, rgba(#484848,0.5) 10%, transparent);
+            height: 100%;
+            width: 100%;
+        }
+
+        &__image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all 300ms ease-in;
+        }
+
+        &__tag{
+            font-size: 1.6rem;
+            color: #fff;
+        }
+
+        &__city{
+            font-weight: 400;
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: -1px;
+
+            @include respond(tab-port){
+                font-size: 2.2rem;
+            }
+            @include respond(phone){
+                font-size: 2.2rem;
+            }
+        }
+
+        &__country{
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 3.2rem;
+            color: #fff;
+            line-height: .9;
+
+            @include respond(tab-port){
+                font-size: 2.8rem;
+            }
+
+            @include respond(phone){
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 13ch;
+            }
+        
+            
+            
+            overflow: hidden;
+            &::after{
+                display: block;
+                content: "";
+                height: 4px;
+                width: 40%;
+                background-color: #fff;
+                margin-top: 5px;
+                border-radius: 4px;
+                transition: all 300ms ease-in;
+                transform: translateX(-100%);
+            }
+        }
+
+        
+        &:active, &:hover &__image{
+            transform: scale(1.03);
+        }
+
+        &:active, &:hover &__country::after{
+            transform: translateX(0);
+        }   
+    }
+
+    &--rated{
+        display: flex;
+        box-shadow: 0 0px 15px rgba(#000,.2);
+        border-radius: 20px;
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+        flex-basis: 25%;
+        position: relative;
+        transition: all 200ms ease-in;
+
+        @include respond(phone){
+            height: 250px;
+        }
+
+        color: #747474;
+        &__image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            max-width: 100%;
+        }
+
+        &__body{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            height: 40%;
+            width: 101%;
+            padding: 1rem;
+            color: $font-color;
+            transition: all 200ms ease-in;
+            background-image: linear-gradient(to top,rgba(#fff,0.8));
+        }
+
+        &:active, &:hover &__body{
+            background-image: linear-gradient(to top,rgba(#fff,0.3) 50%, transparent);
+            color: #fff;
+        }
+
+        &:active, &:hover &__body .card__star{
+            color: gold;
+        }
+
+        &:active, &:hover{
+            box-shadow: 0 5px 15px rgba(#000,.4);
+        }
+
+    }
+
+    &--medium{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+        box-shadow: 0 0px 15px rgba(#000,.2);
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        font-size: 1.4rem;
+
+        &__body{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to top left, rgba(0,0,0,0.2) 50%, transparent);
+            padding: 1rem;
+            transition: all 300ms ease;
+        }
+
+        &__title{
+            font-size: 3rem;
+            color: #fff;
+        }
+
+        &:active, &:hover &__body{
+            background-image: linear-gradient(to top left, rgba(0,0,0,0.4) 50%, transparent);
+        }
+    }
+    
+
+    &__title{
+        font-size: 2.2rem;
+        @include respond(phone){
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 50ch;
+            
+            font-size: 1.8rem;
+        }
+    }
+
+    &__category{
+        font-size: 1.4rem;
+
+
+        @include respond(phone){
+            font-size: 1.2rem;
+        }
+    }
+
+    &__star{
+        color: $color-gradient-light;
+    }
+
+    &__rating{
+        display: flex;
+        font-size: 1.6rem;
+        align-items: center;
+
+        @include respond(phone){
+            font-size: 1.1rem;
+        }
+    }
+
+}

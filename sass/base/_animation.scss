@@ -1,0 +1,33 @@
+.nav-show{
+    transform: translateY(0) !important;
+    visibility: visible !important; 
+    opacity: 1 !important;
+}
+
+.body-lock{
+        overflow: hidden !important;
+        height: 100% !important;
+}
+
+
+
+
+.btn-animation{
+
+}
+
+.btn-animation span{
+    background-color: rgba($color-gradient-light, 0) !important;
+}
+
+.btn-animation span::after{
+    bottom: 18px  !important;
+    width: 80%  !important;
+    transform: rotate(45deg) !important;
+}
+
+.btn-animation span::before{
+    top: 18px !important;
+    width: 80%  !important;
+    transform: rotate(-45deg) !important;
+}

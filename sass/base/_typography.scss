@@ -1,0 +1,45 @@
+.heading{
+
+    &--primary{
+        display: inline-block;
+        font-size: 3.1rem;
+        color: $color-gradient-light;
+        line-height: 1;
+        &::after{
+            display: block;
+            content: "";
+            height: 4px;
+            width: 40%;
+            background-color: $color-gradient-light;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+    }
+
+    &--tertiary{
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 6rem;
+        line-height: 1;
+    }
+
+    &--footer{
+        font-size: 1.8rem;
+        color: $color-gradient-light;
+    }
+}
+
+.paragraph{
+
+    &--primary{
+        display: inline-block;
+        font-weight: 300;
+    }
+
+    @include respond(tab-port){
+        margin-right: 0;
+        margin-bottom: 3rem ;
+    }
+
+
+}

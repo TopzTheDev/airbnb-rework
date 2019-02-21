@@ -1,0 +1,66 @@
+.carousel{
+    
+    &__hider{
+        overflow: hidden;
+        width: calc(100%);
+        position: relative;
+        padding: 2rem;
+       
+    }
+    &__fading{
+        height: 100%;
+        width: 10rem;
+        
+        position: absolute;
+        top: 0;    
+        z-index: 5;
+
+        &--left{
+            background-image: linear-gradient(to right, rgba(#fff,1), rgba(#fff,0.7) 15%, transparent);
+            left: 0;
+        }
+
+        &--right{
+            background-image: linear-gradient(to left, rgba(#fff,1), rgba(#fff,0.7) 15%, transparent);
+            right: 0;
+        }
+    }
+
+    &__nav{
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        cursor: pointer;
+        transform: translateY(-50%);
+        background-color: #fff;
+        height: 8rem;
+        width: 8rem;
+        border: none;
+        border-radius: 100%;
+        box-shadow: 0 0 30px rgba(0,0,0,0.4);
+        font-size: 3.3rem;
+        color: #484848;
+        outline: none;
+
+        @include respond(phone){
+            height: 5rem;
+            width: 5rem;
+            font-size: 2rem;
+        }
+
+        &--right{
+            right: 10px;
+
+            @include respond(phone){
+                right: 0;
+            }
+        }
+
+        &--left{
+            left: 10px;
+            @include respond(phone){
+                left: 0;
+            }
+        }
+    }
+}

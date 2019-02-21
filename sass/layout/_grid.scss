@@ -1,0 +1,60 @@
+.row{
+    max-width: 114rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    flex-wrap:wrap;
+
+    @include respond(tab-port){
+        margin-left: 5px;
+    }
+
+    &>*{
+        padding: 0 2rem 0 0;
+        
+    }
+
+    &--col-2{
+        flex-basis: 50%;
+    }
+    &--col-3{
+        flex-basis: 33.3333%;
+
+        @include respond(tab-port){
+            flex-basis: 100%;
+        }
+    }
+    &--col-4{
+        flex-basis: 25%;
+
+        @include respond(tab-land){
+            flex-basis: 33.333%;
+        }
+
+        @include respond(tab-port){
+            flex-basis: 50%;
+        }
+        
+    }
+    &--col-5{
+        flex-basis: 20%;
+    }
+
+
+    &>*:first-child{
+       // padding-left: 0 !important;
+    }
+
+    &>*:last-child{
+       // padding-right: 0 !important;
+    }
+    
+    &>*{
+        margin-bottom: 3rem;
+    }
+    
+
+}

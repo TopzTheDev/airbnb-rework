@@ -42,8 +42,12 @@
         z-index: 2;
 
         &::-webkit-input-placeholder{
-            color: #e0e0e0;
+            color: #f0f0f0;
             font-size: 1.8rem;
+
+            @include respond(phone){
+                font-size: 1.4rem;
+            }
         }
     }
 

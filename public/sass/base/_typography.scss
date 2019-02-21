@@ -4,6 +4,7 @@
         display: inline-block;
         font-size: 3.1rem;
         color: $color-gradient-light;
+        line-height: 1;
         &::after{
             display: block;
             content: "";
@@ -19,6 +20,7 @@
         color: #fff;
         text-transform: capitalize;
         font-size: 6rem;
+        line-height: 1;
     }
 
     &--footer{
@@ -31,7 +33,12 @@
 
     &--primary{
         display: inline-block;
-        font-weight: 400;
+        font-weight: 300;
+    }
+
+    @include respond(tab-port){
+        margin-right: 0;
+        margin-bottom: 3rem ;
     }
 
 

@@ -16,7 +16,7 @@
     &__title{
         color: #fff;
         width: 50%;
-        margin-top: 30rem;
+        margin-top: 38rem;
         transform: translateY(-50%);
         font-size: 1.6rem;
 
@@ -31,9 +31,9 @@
         }
 
         @include respond(phone){
+            margin-top: 27rem;
             h1{
-                font-size: 4.8rem;
-                margin-top: 20rem;
+                font-size: 4rem;
             }
             p{
                 margin-left: 4px;

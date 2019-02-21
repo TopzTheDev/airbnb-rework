@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+::selection{
+    background-color: $color-gradient-light;
+    color: #fff;
+}
 
 html,body {
     font-size: 62.5%;

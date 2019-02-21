@@ -16,14 +16,15 @@
     &__title{
         color: #fff;
         width: 50%;
-        margin-top: 38rem;
+        position: absolute;
+        left: 10px;
+        bottom: -30px;
         transform: translateY(-50%);
         font-size: 1.6rem;
-
+        
         @include respond(tab-land){
             padding: 0 2rem;
             width: 70%;
-            margin-top: 32rem;
        }
 
         @include respond(tab-port){
@@ -31,7 +32,7 @@
         }
 
         @include respond(phone){
-            margin-top: 27rem;
+            
             h1{
                 font-size: 4rem;
             }

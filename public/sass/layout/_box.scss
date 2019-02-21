@@ -99,11 +99,14 @@
 
             @include respond(tab-land){
                 width: 100%;
+                position: absolute;
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 flex-basis: 33.333%;
                 flex-grow: 1;
                 flex-shrink: 0;
                 position: relative;
+                left: 0;
+                transform: translateX(0);
             }
 
         }
@@ -127,14 +130,18 @@
 
         }   
 
+        &:active, 
         &:hover::before{
             background-color: rgba($color-gradient-light,0.1);
         }
+        &:active, 
         &:hover::after{
             opacity: 1;
         }
 
-        &:hover .box__image{
+        &:active, 
+        &:hover 
+        .box__image{
             transform: scale(1.1);
         }
     }

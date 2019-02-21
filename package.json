@@ -4,12 +4,16 @@
   "description": "Preparation for upcoming website",
   "main": "index.php",
   "scripts": {
-    "compile:sass": "node-sass ./public/sass/main.scss ./public/style/main.css -w"
+    "compile:sass": "node-sass ./public/sass/main.scss ./public/style/main.css -w",
+    "deploy": "gh-pages"
   },
   "author": "Christopher",
   "license": "ISC",
+  "homepage": "https://github.com/TopzTheDev/airbnb-rework",
   "devDependencies": {
     "node-sass": "^4.11.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
